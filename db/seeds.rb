@@ -11,3 +11,19 @@ Tip.create!(
   email: 'elomar@elomar.me',
   title: 'Ponta Negra',
   body: "Don't forget to visit Ponta Negra! It's a very beautiful beach.")
+
+Fact.create!(
+  name: 'Country',
+  value: 'Brazil');
+  
+Fact.create!(
+  name: 'Region',
+  value: 'Northeast');
+
+Fact.create!(
+  name: 'State',
+  value: 'RN');
+
+Fact.create!(
+  name: 'Population',
+  value: '~ 1.4 million');

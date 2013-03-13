@@ -108,3 +108,8 @@ p.author {
   background-color: #f2dede;
   border: 1px solid #eed3d7;
 }
+
+div.tip {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #aaa;
+}
