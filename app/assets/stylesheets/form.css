@@ -1,0 +1,29 @@
+form input[type="submit"], form label {
+  display: block;
+  float: left;
+  clear: left;
+  margin: 10px 0;
+}
+form label b {
+  display: block;
+  float: left;
+  width: 120px;
+  margin-right: 20px;
+}
+form label input,
+form label textarea,
+form label select {
+  float: left;
+  width: 180px;
+}
+form label input[type="radio"],
+form label input[type="checkbox"] {
+  width: 20px;
+}
+form p {
+  clear: left;
+  margin: 10px 0 0;
+}
+form fieldset {
+  border: none;
+}

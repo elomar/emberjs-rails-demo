@@ -1,0 +1,13 @@
+<h2>Things to do</h2>
+
+<p>Take a look at some cool tips of things to do in Natal:</p>
+
+{{#each tip in controller}}
+  <h3>{{tip.title}}</h3>
+  <p>{{tip.body}}</h3>
+  <p class="author">said {{tip.name}}</p>
+{{/each}}
+
+<p>
+  Don't see something that should be there? {{#linkTo 'tips.new'}}Leave your tip!{{/linkTo}}
+</p>
