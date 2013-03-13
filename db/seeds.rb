@@ -5,3 +5,9 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+Tip.create!(
+  name: 'Elomar Souza', 
+  email: 'elomar@elomar.me',
+  title: 'Ponta Negra',
+  body: "Don't forget to visit Ponta Negra! It's a very beautiful beach.")
