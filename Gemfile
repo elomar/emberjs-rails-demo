@@ -8,6 +8,7 @@ gem 'pg'
 
 gem 'carrierwave'
 gem 'ember-rails'
+gem 'fog'
 gem 'thin'
 
 # Gems used only for assets and not required
