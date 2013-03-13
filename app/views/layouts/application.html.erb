@@ -1,14 +1,20 @@
 <!DOCTYPE html>
+
 <html>
-<head>
-  <title>Hw3</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+ <head>
+    <title>Natal, the city of the sun</title>
+    <meta name="keywords" content="natal, brazil, sun, beaches" />
+    <meta name="author" content="Elomar Souza" />
+    <meta name="description" content="This is a page about Natal, the city of the sun." />
+    <meta charset="utf-8">
 
-<%= yield %>
+    <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    <%= csrf_meta_tags %>
+  </head>
 
-</body>
+  <body>
+    <%= yield %>
+  </body>
 </html>
+

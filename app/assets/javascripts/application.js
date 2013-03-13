@@ -16,6 +16,7 @@
 //= require handlebars
 //= require ember
 //= require ember-data
+//= require_tree ../../../vendor/assets/javascripts/
 //= require_self
 //= require hw3
 Hw3 = Ember.Application.create();

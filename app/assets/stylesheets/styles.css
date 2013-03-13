@@ -1,0 +1,96 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.5em;
+  background: url(kindajean.png);
+  height: 100%;
+  width: 75%;
+  margin: 0 auto;
+}
+
+#container {
+  background-color: white;
+  padding: 1%;
+  border: 1px solid #ddd;
+}
+
+#header {
+  padding: 20px;
+  background: #DAEAF7 url(header_bg.png) -60px -70px;
+  border: 1px solid #777;
+}
+
+#navigation {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#navigation li {
+  display: inline;
+  padding: 5px;
+}
+
+#navigation li a:hover {
+  font-style: italic;
+}
+
+#sidebar {
+  width: 20%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  float: left;
+}
+
+#content {
+  width: 75%;
+  float: right;
+  margin-bottom: 5%;
+}
+
+#footer {
+  border-top: 1px solid #333;
+  clear: both;
+  font-size: 0.8em;
+}
+
+table {
+  border: 1px solid #333;
+}
+
+table td, table th {
+  padding: 5px;
+}
+
+table tr th {
+  text-align: left;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.map iframe {
+  border: 1px solid #333;
+}
+
+.images {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.images a {
+  float: left;
+  display: block;
+  width: 260px;
+  height: 260px;
+  overflow: hidden;
+  margin: 10px;
+  padding: 10px;
+}
+
+.images a:hover {
+  padding: 0;
+  border: 10px solid #333;
+}
+
+.images a img {
+  height: 260px;
+}

@@ -1,5 +1,44 @@
-<h1>Application</h1>
+<div id="container">
+  <div id="header">
+    <h1>Natal, the city of the sun</h1>
 
-<p>Your content here.</p>
+    <ul id="navigation">
+      {{#linkTo 'index'}}Home{{/linkTo}}
+      {{#linkTo 'map'}}Map{{/linkTo}}
+    </ul>
+  </div>
 
-{{outlet}}
+  <div id="sidebar">
+    <h2>Quick Facts</h2>
+
+    <table>
+      <tbody>
+        <tr>
+          <th>Country</th>
+          <td>Brazil</td>
+        </tr>
+        <tr>
+          <th>Region</th>
+          <td>Northeast</td>
+        </tr>
+        <tr>
+          <th>State</th>
+          <td>RN</td>
+        </tr>
+        <tr>
+          <th>Population</th>
+          <td>~ 1.4 million</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div id="content">
+    {{outlet}}
+  </div>
+  
+  <div id="footer">
+    <p>by Elomar Souza, 2013. No rights reserved.</p>
+  </div>
+</div>
+
