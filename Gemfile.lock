@@ -44,6 +44,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.6.1)
+    daemons (1.1.9)
     ember-data-source (0.0.5)
       ember-source
     ember-rails (0.11.1)
@@ -56,6 +57,7 @@ GEM
     ember-source (0.0.1)
       handlebars-source (>= 1.0.0.rc3, < 1.0.0.rc4)
     erubis (2.7.0)
+    eventmachine (1.0.3)
     execjs (1.4.0)
       multi_json (~> 1.0)
     handlebars-source (1.0.0.rc3)
@@ -111,6 +113,10 @@ GEM
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (~> 2.8)
+    thin (1.5.0)
+      daemons (>= 1.0.9)
+      eventmachine (>= 0.12.6)
+      rack (>= 1.0.0)
     thor (0.17.0)
     thread_safe (0.1.0)
       atomic
@@ -137,5 +143,6 @@ DEPENDENCIES
   pg
   rails (= 4.0.0.beta1)
   sass-rails (~> 4.0.0.beta1)
+  thin
   turbolinks
   uglifier (>= 1.0.3)
