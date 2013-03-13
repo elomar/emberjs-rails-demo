@@ -1,7 +1,7 @@
 body {
   font-family: Helvetica, Arial, sans-serif;
   line-height: 1.5em;
-  background: url(kindajean.png);
+  background-image: image-url("kindajean.png");
   height: 100%;
   width: 75%;
   margin: 0 auto;
@@ -15,7 +15,7 @@ body {
 
 #header {
   padding: 20px;
-  background: #DAEAF7 url(header_bg.png) -60px -70px;
+  background: #DAEAF7 image-url("header_bg.png") -60px -70px;
   border: 1px solid #777;
 }
 
