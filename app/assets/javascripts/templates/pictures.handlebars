@@ -1,0 +1,7 @@
+<h2>Pictures</h2>
+
+<ul class="images">
+  {{#each controller}}
+    <li><a {{bindAttr href="path" title="title"}} rel="lightbox[natal]"><img {{bindAttr src="path" alt="title"}}></a></li>
+  {{/each}}
+</ul>

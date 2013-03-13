@@ -27,3 +27,9 @@ Fact.create!(
 Fact.create!(
   name: 'Population',
   value: '~ 1.4 million');
+
+(1..6).each do |i|
+  Picture.create!(
+    title: 'Picture of Natal, Brazil',
+    picture: File.open(Rails.root.join('db', 'seeds', 'images', "#{i}.jpg")))
+end

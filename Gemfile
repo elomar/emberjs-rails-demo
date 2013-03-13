@@ -5,6 +5,7 @@ gem 'rails', '4.0.0.beta1'
 
 gem 'pg'
 
+gem 'carrierwave'
 gem 'ember-rails'
 
 # Gems used only for assets and not required
