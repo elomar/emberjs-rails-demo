@@ -11,6 +11,15 @@ gem 'ember-rails'
 gem 'fog'
 gem 'thin'
 
+gem 'devise'                   # server-side authentication
+gem 'bcrypt-ruby'              # password encryption
+
+gem 'inherited_resources'      # for easy RESTful API controller scaffolding
+gem 'active_model_serializers' # works out of the box with ember-data
+
+gem 'ember-rails'              # ember framework
+gem 'ember-auth-rails'         # client-side authentication
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -23,19 +32,34 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'
+group :development, :test do
+  gem 'rspec-rails'                 # for tests
+  gem 'spork'                       # speedier tests
+  gem 'guard-rspec'                 # watch app files
+  gem 'guard-spork'                 # spork integration
+  gem 'database_cleaner'            # cleanup database in tests
+  gem 'fabrication'                 # model stubber
+  gem 'shoulda'                     # model spec tester
+  gem 'rb-inotify', require: false  # Linux file notification
+  gem 'rb-fsevent', require: false  # OSX file notification
+  gem 'rb-fchange', require: false  # Windows file notification
+end
 
-# Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
+gem 'haml'                     # easier to write templates
+gem 'haml-rails'               # rails integration
+gem 'hamlbars'                 # easier to write handlebars
+
+gem 'unicorn'                  # better server gem for heroku
+
+gem 'newrelic_rpm'             # prevent heroku from idling
+
+gem 'jquery-rails'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.0.1'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
-
-# Use unicorn as the app server
-# gem 'unicorn'
 
 # Deploy with Capistrano
 # gem 'capistrano', group: :development
