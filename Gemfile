@@ -11,7 +11,7 @@ gem 'ember-rails'
 gem 'fog'
 gem 'thin'
 
-gem 'devise'                   # server-side authentication
+gem 'devise', git: 'https://github.com/plataformatec/devise.git', branch: 'rails4'
 gem 'bcrypt-ruby'              # password encryption
 
 gem 'inherited_resources'      # for easy RESTful API controller scaffolding
@@ -19,6 +19,8 @@ gem 'active_model_serializers' # works out of the box with ember-data
 
 gem 'ember-rails'              # ember framework
 gem 'ember-auth-rails'         # client-side authentication
+
+gem 'protected_attributes'
 
 # Gems used only for assets and not required
 # in production environments by default.
