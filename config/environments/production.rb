@@ -79,4 +79,6 @@ Hw3::Application.configure do
   config.log_formatter = ::Logger::Formatter.new
 
   config.ember.variant = :production
+
+  config.action_mailer.default_url_options = { host: 'cs292-hw3.herokuapp.com' }
 end

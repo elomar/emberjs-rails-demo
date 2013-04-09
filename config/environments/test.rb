@@ -1,3 +1,5 @@
+require 'bcrypt'
+
 Hw3::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
@@ -33,4 +35,12 @@ Hw3::Application.configure do
 
   # Print deprecation notices to the stderr.
   config.active_support.deprecation = :stderr
+
+  silence_warnings do
+    BCrypt::Engine::DEFAULT_COST = BCrypt::Engine::MIN_COST
+  end
+
+  config.ember.variant = :development
+
+  config.action_mailer.default_url_options = { host: 'localhost:3000' }
 end
