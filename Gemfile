@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 ruby '2.0.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.0.beta1'
+gem 'rails', github: 'rails/rails'
 
 gem 'pg'
 
@@ -21,6 +21,8 @@ gem 'ember-rails'              # ember framework
 gem 'ember-auth-rails'         # client-side authentication
 
 gem 'protected_attributes'
+
+gem 'turbolinks'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -51,7 +53,7 @@ gem 'haml'                     # easier to write templates
 gem 'haml-rails'               # rails integration
 gem 'hamlbars'                 # easier to write handlebars
 
-gem 'unicorn'                  # better server gem for heroku
+#gem 'unicorn'                  # better server gem for heroku
 
 gem 'newrelic_rpm'             # prevent heroku from idling
 

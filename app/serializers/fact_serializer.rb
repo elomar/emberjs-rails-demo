@@ -1,3 +1,3 @@
-class FactSerializer < ActiveModel::Serializer
+class FactSerializer < BaseSerializer
   attributes :id, :name, :value
 end

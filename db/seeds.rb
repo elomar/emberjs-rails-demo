@@ -33,3 +33,7 @@ Fact.create!(
     title: 'Picture of Natal, Brazil',
     picture: File.open(Rails.root.join('db', 'seeds', 'images', "#{i}.jpg")))
 end
+
+User.create([
+  { email: 'demo@elomar.me', password: '123456' }
+])
