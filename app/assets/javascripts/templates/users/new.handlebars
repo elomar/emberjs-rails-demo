@@ -1,4 +1,4 @@
-<h2>Sign in</h2>
+<h2>Sign up</h2>
 
 <form>
   <fieldset>
@@ -8,8 +8,10 @@
     <label><b>Password</b>
       {{view Ember.TextField type="password" valueBinding='view.password'}}
     </label>
-    <input type="submit" value="Sign in">
-    <a href="/users/sign_up">Sign up</a>
+    <label><b>Confirm your password</b>
+      {{view Ember.TextField type="password" valueBinding='view.password_confirmation'}}
+    </label>
+    <input type="submit" {{action save}} value="Sign up">
   </fieldset>
 </form>
 
