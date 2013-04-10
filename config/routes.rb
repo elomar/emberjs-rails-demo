@@ -4,9 +4,9 @@ Hw3::Application.routes.draw do
 
   scope module: 'api' do
     resources :users, only: :show
-    resources :facts
-    resources :tips
-    resources :pictures
+    resources :facts, only: [:index, :create]
+    resources :tips, only: [:index, :create]
+    resources :pictures, only: :index
   end
 
 end

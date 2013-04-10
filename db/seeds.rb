@@ -34,6 +34,9 @@ Fact.create!(
     picture: File.open(Rails.root.join('db', 'seeds', 'images', "#{i}.jpg")))
 end
 
-User.create([
-  { email: 'demo@elomar.me', password: '123456' }
-])
+user = User.new(
+  email: 'demo@elomar.me',
+  password: '123456')
+user.admin = true
+user.skip_confirmation!
+user.save!

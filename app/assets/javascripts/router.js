@@ -4,7 +4,7 @@ Hw3.Router.map(function() {
   this.resource("tips", function() {
     this.route("new");
   });
-  this.resource("users", function() {
+  this.resource("facts", function() {
     this.route("new");
   });
 });

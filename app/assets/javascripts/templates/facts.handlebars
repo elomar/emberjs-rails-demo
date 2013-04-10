@@ -10,3 +10,7 @@
     {{/each}}
   </tbody>
 </table>
+
+{{#if Auth.currentUser.admin}}
+  {{render 'facts.new'}}
+{{/if}}

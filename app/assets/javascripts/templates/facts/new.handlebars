@@ -1,0 +1,14 @@
+<h2>New Fact</h2>
+
+<form>
+  <fieldset>
+    <label><b>Name</b>
+      {{view Ember.TextField valueBinding='name'}}
+    </label>
+    <label><b>Value</b>
+      {{view Ember.TextField valueBinding='value'}}
+    </label>
+    <input type="submit" {{action save}} value="Add new fact">
+  </fieldset>
+</form>
+
