@@ -7,9 +7,8 @@ gem 'rails', github: 'rails/rails'
 gem 'pg'
 
 gem 'carrierwave'
-gem 'ember-rails'
+gem 'cancan'
 gem 'fog'
-gem 'thin'
 
 gem 'devise', git: 'https://github.com/plataformatec/devise.git', branch: 'rails4'
 gem 'bcrypt-ruby'              # password encryption
