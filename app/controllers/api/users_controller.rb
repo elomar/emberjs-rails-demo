@@ -1,6 +1,6 @@
 module Api
   class UsersController < AuthController
-    actions :index, :show
+    actions :show
     before_filter :auth_only!
   end
 end

@@ -1,6 +1,7 @@
 module Api
-  class TipsController < BaseController
+  class TipsController < AuthController
     actions :index, :create
+    before_filter :auth_only!, only: :create
 
     protected 
 

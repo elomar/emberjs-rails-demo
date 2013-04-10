@@ -21,4 +21,5 @@
 //= require_self
 //= require hw3
 //= require_tree .
+
 Hw3 = Ember.Application.create();

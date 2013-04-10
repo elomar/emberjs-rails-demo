@@ -3,6 +3,7 @@ Hw3::Application.routes.draw do
   root to: "public#index"
 
   scope module: 'api' do
+    resources :users, only: :show
     resources :facts
     resources :tips
     resources :pictures

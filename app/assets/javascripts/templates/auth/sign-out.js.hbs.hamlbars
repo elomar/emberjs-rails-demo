@@ -1,2 +1,4 @@
 %form
+  %p
+    =hb 'Auth.currentUser.email'
   %button Sign Out
