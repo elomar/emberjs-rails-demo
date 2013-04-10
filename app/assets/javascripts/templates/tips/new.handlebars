@@ -1,22 +1,28 @@
-<h2>Leave your tip of thing to do</h2>
+{{#if Auth.authToken}}
+  <h2>Leave your tip of thing to do</h2>
 
-<p class="errors">
-  Ops! There was a problem with your tip. Did you forget one of the fields?
-</p>
+  <p class="hidden errors">
+    Ops! There was a problem with your tip. Did you forget one of the fields?
+  </p>
 
-<form>
-  <fieldset>
-    <label><b>Your name</b>
-      {{view Ember.TextField valueBinding='name'}}
-    </label>
-    <label><b>Title of your tip</b>
-      {{view Ember.TextField valueBinding='title'}}
-    </label>
-    <label><b>Your tip</b>
-      {{view Ember.TextArea valueBinding='body'}}
-    </label>
-    <input type="submit" {{action save}} value="Leave your tip">
-  </fieldset>
-</form>
+  <form>
+    <fieldset>
+      <label><b>Your name</b>
+        {{view Ember.TextField valueBinding='name'}}
+      </label>
+      <label><b>Title of your tip</b>
+        {{view Ember.TextField valueBinding='title'}}
+      </label>
+      <label><b>Your tip</b>
+        {{view Ember.TextArea valueBinding='body'}}
+      </label>
+      <input type="submit" {{action save}} value="Leave your tip">
+    </fieldset>
+  </form>
 
-<a href='#' {{action cancel}}>See all tips</a>
+  <a href='#' {{action cancel}}>See all tips</a>
+{{else}}
+  <p class="errors">
+    Ops! First you have to sign in.
+  </p>
+{{/if}}
