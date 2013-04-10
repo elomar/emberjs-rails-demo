@@ -1,5 +1,5 @@
 module Api
   class FactsController < BaseController
-    actions :index, :show
+    actions :index
   end
 end

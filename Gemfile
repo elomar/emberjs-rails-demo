@@ -53,7 +53,7 @@ gem 'haml'                     # easier to write templates
 gem 'haml-rails'               # rails integration
 gem 'hamlbars'                 # easier to write handlebars
 
-#gem 'unicorn'                  # better server gem for heroku
+gem 'unicorn'                  # better server gem for heroku
 
 gem 'newrelic_rpm'             # prevent heroku from idling
 

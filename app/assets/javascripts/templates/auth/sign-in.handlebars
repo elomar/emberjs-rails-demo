@@ -1,0 +1,14 @@
+<h2>Sign in</h2>
+
+<form>
+  <fieldset>
+    <label><b>Email</b>
+      {{view Ember.TextField valueBinding='view.email'}}
+    </label>
+    <label><b>Password</b>
+      {{view Ember.TextField type="password" valueBinding='view.password'}}
+    </label>
+    <input type="submit" value="Sign in">
+  </fieldset>
+</form>
+

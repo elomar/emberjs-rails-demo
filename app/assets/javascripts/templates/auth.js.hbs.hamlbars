@@ -1,0 +1,4 @@
+=hb 'if Auth.authToken' do
+  =hb 'view Hw3.AuthSignOutView'
+  =hb 'else'
+  =hb 'view Hw3.AuthSignInView'
